@@ -1,4 +1,6 @@
+import aggregate from "./aggregate";
 import orm from "./orm";
+import sort from "./sort";
 
 console.log(
     orm([
@@ -9,9 +11,9 @@ console.log(
     ]).select(["name", "age"])
 );
 
-const autil = { orm };
+const autil = { aggregate, orm, sort };
 
-export { orm };
+export { aggregate, orm, sort };
 
 export default autil;
 module.exports = autil;
