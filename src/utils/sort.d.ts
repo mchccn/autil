@@ -1,5 +1,3 @@
-// cassie's black magic black magic
-
 type Primitive = string | number | boolean | never | undefined | null | symbol;
 
 type Stringable = string | number | bigint | boolean;
